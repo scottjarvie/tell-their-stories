@@ -29,7 +29,8 @@ import {
   ChevronLeft,
   ChevronRight,
   PenTool,
-  Clock
+  Clock,
+  Wrench
 } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
@@ -45,6 +46,12 @@ const navItems = [
     href: "/app/source-docs",
     label: "Source Docs",
     icon: FileText,
+    available: true,
+  },
+  {
+    href: "/app/tools",
+    label: "Source Tools",
+    icon: Wrench,
     available: true,
   },
   {
